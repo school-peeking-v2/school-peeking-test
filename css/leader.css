@@ -1,0 +1,36 @@
+.invent-section {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+.inven {
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.inven-title {
+    font-size: 1.95rem;
+    font-weight: 500;
+    margin-top: 21px;
+       
+}
+
+.inven-inst {
+    padding-bottom: 50px;
+}
+
+.table {
+    display: inline;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+tr {
+    display: block;
+    padding: 10px;
+}
