@@ -2,3 +2,9 @@
 /node_modules
 
 yarn-error.log
+firebase-debug.log
+database.rules.json
+.firebaserc
+firebase.json
+.firebase
+school-peeking-v2-firebase-adminsdk-z7zme-711598f1a2.json
