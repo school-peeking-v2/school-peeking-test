@@ -11,8 +11,8 @@
     <title>첫 등교는 IP로!</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/faviconSchool.ico" />
-    <link rel="icon" href="images/faviconSchool.ico" />
+    <link rel="shortcut icon" href="./images/faviconSchool.ico" />
+    <link rel="icon" href="./images/faviconSchool.ico" />
 
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
@@ -30,9 +30,11 @@
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"
+        <a class="navbar-brand js-scroll-trigger" href="https://localhost:5000/"
           >첫 등교는 IP로!</a
         >
+        <!-- 배포했을 경우 : 
+          <a class="navbar-brand js-scroll-trigger" href="https://school-peeking-v2.web.app/">첫 등교는 IP로!</a> -->
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -54,7 +56,7 @@
             <li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
-                href="./inventory"
+                href="/inventory"
                 id="inventory"
                 >인벤토리</a
               >
@@ -70,8 +72,8 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#" id="logout"
-                >로그아웃</a
+              <a class="nav-link js-scroll-trigger" href="/login" id="login"
+                >로그인</a
               >
             </li>
           </ul>
@@ -82,21 +84,12 @@
     <script src="./js/jquery.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="./js/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="./js/grayscale.min.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.14.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.14.1/firebase-auth.js"></script>
-    <script src="/__/firebase/7.14.1/firebase-database.js"></script>
-    <script src="/__/firebase/7.14.1/firebase-hosting.js"></script>
   </body>
 </html>
