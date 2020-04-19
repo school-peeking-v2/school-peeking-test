@@ -1,10 +1,2 @@
 # dependencies
 /node_modules
-
-yarn-error.log
-firebase-debug.log
-database.rules.json
-.firebaserc
-firebase.json
-.firebase
-/routes/firebaseConfig.js

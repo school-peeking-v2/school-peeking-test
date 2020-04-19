@@ -4,9 +4,6 @@ var path = require("path");
 const bodyParser = require("body-parser");
 var logger = require("morgan");
 
-// The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
-const functions = require("firebase-functions");
-
 // The Firebase Admin SDK to access the Firebase Realtime Database.
 const admin = require("firebase-admin");
 admin.initializeApp();
@@ -46,4 +43,4 @@ app.use(function (err, req, res, next) {
   res.render("404");
 });
 
-module.exports = functions.https.onRequest(app);
+module.exports = app;
