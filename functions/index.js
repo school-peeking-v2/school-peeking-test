@@ -1,23 +1,17 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
 const bodyParser = require("body-parser");
-var logger = require("morgan");
+const logger = require("morgan");
+
+const login = require("./routes/login");
+const inventory = require("./routes/inventory");
 
 // The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
 const functions = require("firebase-functions");
+const app = express();
 
-// The Firebase Admin SDK to access the Firebase Realtime Database.
-const admin = require("firebase-admin");
-admin.initializeApp();
-
-var session = require("./routes/session");
-var login = require("./routes/login");
-var inventory = require("./routes/inventory");
-
-var app = express();
-
-// // view engine setup
+// // view engine setup to html
 app.engine("html", require("ejs").renderFile);
 app.set("views", path.join(path.dirname(__dirname), "public"));
 app.set("view engine", "html");
@@ -27,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(path.dirname(__dirname), "public")));
 
+//set Router
 app.use("/login", login);
 app.use("/inventory", inventory);
 
@@ -43,7 +38,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("404.html");
+  res.send({ error: err.status });
 });
 
 const api = functions.https.onRequest(app);
