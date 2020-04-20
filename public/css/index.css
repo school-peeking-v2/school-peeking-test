@@ -1,0 +1,33 @@
+.main {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+#go_login {
+    text-align: right;
+    font-weight: 600;
+    color: white;
+    font-size: 18pt;
+    
+}
+
+.go {
+    padding: 50px 150px;
+}
+
+.logo {
+    position: relative;
+    left: 100px;
+    width: 500px;
+}
+
+.logo-icon {
+    position: relative;
+    right: 0px;
+    transform:rotate(-25deg)
+}
+
+.main {
+    border: 1px solid gray;
+}
