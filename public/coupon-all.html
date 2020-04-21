@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="./css/coupon.css" />
   </head>
   <body>
+    <script>
+      userSessionCheck_inven();
+  </script>
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
@@ -87,7 +90,28 @@
       <p class="inven-inst" id="inven-inst">
         곧 인증서가 보입니다!
       </p>
-      <div id="inven-list"></div>
+      <div id="inven-list">
+        <div class="row">
+          <div class="col-md">
+            <div class="inven-item">
+              <img class="item-img" src="images/coupon0.png" id="img0">
+              <div class="inven-item-name">기본 인증서</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="inven-item">
+                <img class="item-img" src="images/coupon0.png" id="img0">
+                <div class="inven-item-name">기본 인증서</div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="inven-item">
+                <img class="item-img" src="images/coupon0.png" id="img0">
+                <div class="inven-item-name">기본 인증서</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/jquery.min.js"></script>

@@ -26,30 +26,8 @@
     font-weight: 450;
 }
 
-.inven-me-title {
-    display: inline;
-    border-radius: 40px;
-    background-color: #D6D6D6;
-    position: relative;
-    margin:0 auto;
-    padding: 10px 30px;
-    font-size: 1rem;
-    font-weight: 450;
-}
-
-.inven-me {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #D6D6D6;
-    display: inline-block;
-    margin: 30px auto;
-    
-}
-
 .inven-item {
     width: 250px;
-    height: 250px;
     border-radius: 20px;
     display: inline-block;
     margin: 40px 30px;
@@ -58,7 +36,6 @@
 
 .inven-item:hover {
     width: 250px;
-    height: 250px;
     border-radius: 20px;
     display: inline-block;
     margin: 40px 30px;
@@ -75,7 +52,6 @@
 .item-img {
     margin: 0 10px;
     width: 250px;
-    height: 250px;
     text-align: center;
     padding:15px;
 }
