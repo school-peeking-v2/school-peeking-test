@@ -6,6 +6,9 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var invenRouter = require("./routes/inventory");
+var couponRouter = require("./routes/coupon");
+var leaderRouter = require("./routes/leader");
+var rankRouter = require("./routes/rank");
 
 var app = express();
 
@@ -21,6 +24,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/inventory", invenRouter);
+app.use("/coupon", couponRouter);
+app.use("/leader", couponRouter);
+app.use("/rank", couponRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
