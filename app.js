@@ -8,9 +8,12 @@ var logger = require("morgan");
 const admin = require("firebase-admin");
 admin.initializeApp();
 
-var authRouter = require("./functions/firebaseSession");
-var loginRouter = require("./functions/login");
-var invenRouter = require("./functions/inventory");
+// var authRouter = require("./functions/routes/firebaseSession");
+var loginRouter = require("./functions/routes/login");
+var invenRouter = require("./functions/routes/inventory");
+var couponRouter = require("./functions/routes/coupon");
+var leaderRouter = require("./functions/routes/leader");
+var rankRouter = require("./functions/routes/rank");
 
 var app = express();
 
@@ -26,6 +29,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/login", loginRouter);
 app.use("/inventory", invenRouter);
+app.use("/coupon", couponRouter);
+app.use("/leader", leaderRouter);
+app.use("/rank", rankRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -40,7 +46,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("404");
+  res.render({ error: true });
 });
 
 module.exports = app;
