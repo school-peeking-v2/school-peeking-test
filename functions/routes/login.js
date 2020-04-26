@@ -1,13 +1,14 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const firebase = require("./firebaseConfig");
+const firebase = require('./firebaseConfig');
 
-router.get("/", (req, res) => {
-  console.log("login view");
-  res.render("login");
+router.get('/', (req, res) => {
+  console.log('login view');
+  //res.render("login");
+  res.render('login.html');
 });
 
-router.post("/signIn", (req, res) => {
+router.post('/signIn', (req, res) => {
   var email = req.body.email;
   var password = req.body.password;
 
@@ -15,14 +16,14 @@ router.post("/signIn", (req, res) => {
     .auth()
     .signInWithEmailAndPassword(email, password)
     .then((userResult) => {
-      console.log("login success");
+      console.log('login success');
       return;
     })
     .catch((err) => {
-      console.log("login error : error : %s", err);
+      console.log('login error : error : %s', err);
     });
 
-  res.redirect("http://localhost:5000/");
+  res.redirect('http://localhost:5000/');
 });
 
 // module.exports = router;
