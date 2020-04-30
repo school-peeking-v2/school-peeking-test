@@ -1,0 +1,23 @@
+{
+  "name": "school-peeking-v2-develop",
+  "version": "1.0.0",
+  "description": "2020 Mirim IT show Entries",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "firebase": "^7.14.0",
+    "firebase-tools": "^8.1.1",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}

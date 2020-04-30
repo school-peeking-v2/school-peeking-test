@@ -1,0 +1,31 @@
+#mainNav {
+    background-color: #fff
+}
+
+#mainNav .nav-link, #mainNav .navbar-brand {
+    -webkit-transition: none;
+    transition: none;
+    padding: 0.7rem 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 90%;
+    padding: 0.8rem;
+    margin-right: 0.6rem;
+    color: #008156;
+    border: 1px solid #008156;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover{
+    color: #008156;
+    font-weight: 600;
+}
+
+
+@media (max-width: 992px) {
+    #mainNav .nav-link {
+        padding: 1.25rem;
+      }
+}
