@@ -10,6 +10,7 @@ var invenRouter = require('./routes/inventory');
 var couponRouter = require('./routes/coupon');
 var leaderRouter = require('./routes/leader');
 var rankRouter = require('./routes/rank');
+var roadRouter = require('./routes/roadview');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/inventory', invenRouter);
 app.use('/coupon', couponRouter);
 app.use('/leader', leaderRouter);
 app.use('/rank', rankRouter);
+app.use('/roadview', roadRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
